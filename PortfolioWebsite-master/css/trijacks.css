@@ -1,0 +1,242 @@
+/*
+	Breakpoints
+		- sm = 540px
+		- md = 720px
+		- lg = 960px
+		- xl = 1140px
+*/
+
+
+
+
+/***********************************************
+
+HERO IMAGE - Intro Slide
+
+************************************************/
+
+.hero__img{
+ background-image:url(../images/tri_jacks_banner.jpg);
+ width:100%;
+ height:100vh;
+ margin: 0;
+ padding: 0;
+ background-attachment:fixed;
+ background-position:center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+/***********************************************
+
+PAGE SECTION 1- About Me and Intrests
+
+************************************************/
+
+
+/********* Tablets *********/
+
+.center__image {
+	width: 100%;
+	padding-bottom: 110px;
+	padding-top: 50px;
+}
+
+
+img {
+	display: block;
+	margin: auto;
+}
+
+
+
+.left__third {
+  background-position:center;
+	width: 30%;
+	float: left;
+	margin: 10px;
+	flex-direction: column;
+}
+
+.middle__third {
+background-position:center;
+	width: 30%;
+	float: left;
+	flex-direction: column;
+}
+
+.right__third {
+	background-position:center;
+	width: 30%;
+	margin: 10px;
+	float: left;
+	flex-direction: column;
+}
+
+@media all and (max-width:695px) {
+	.left__third {
+		float: none;
+		width: 100%;
+	}
+	
+	.middle__third {
+		float: none;
+		width: 100%;
+	}
+	
+	.right__third {
+		float: none;
+		width: 100%;
+	}
+
+}
+
+
+
+
+/***********************************************
+
+DIVS - Portfolio Columns
+
+************************************************/
+
+
+.portfolio__col__left {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  float: left;
+  overflow:hidden;
+}
+
+.portfolio__col__right {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  float:left;
+  overflow:hidden;
+  padding-left: 40px;
+}
+
+/***********************************************
+
+RESUME DETAILS - date, title, project
+
+************************************************/
+
+
+.portfolio__list li {
+	list-style-type: none;
+	text-transform:uppercase;
+	color: #f0b530;
+	font-weight:bold;
+	padding-top: 20px;
+	font-size: 1.2rem;
+	font-family: 'Oswald', sans-serif;
+	border-bottom: 1px solid #A8A4A4;
+}
+
+
+.portfolio__section {
+	padding-left: 11px;
+}
+
+
+
+.list__left__col {
+	float: left;
+	width: 50%;
+	padding-left: 10px;
+}
+
+.list__right__col {
+	float: right;
+	width: 50%;
+}
+
+
+/********* Tablets *********/
+
+@media all and (max-width:980px) {
+.portfolio__list {
+	display:inline-block;
+	column-count: 2;
+	width: 100%;
+}
+}
+
+/********* Phones *********/
+
+@media all and (max-width:695px) {
+
+.portfolio__list {
+	display:block;
+	column-count: 1;
+	width: 100%;
+	}
+}
+
+@media all and (max-width:980px) {
+
+.portfolio__col__left {
+  margin:auto;
+  width: 100%;
+  float: none;
+  overflow:hidden;
+}
+
+.portfolio__col__right {
+  margin: auto;
+  width: 100%;
+  float:none;
+  overflow:hidden;
+  padding-left: 0px;
+}
+}
+
+/********* Tablets *********/
+
+.bottom__nav {
+ width: 100vw;
+ padding-top: 30vh;
+}
+
+.nav__left__col {
+	background-color: #C3ECEC;
+	width: 50%;
+	height:30vh;
+	float: left;
+
+}
+
+.nav__right__col {
+	background-color: #D97A7C;
+	width: 50%;
+	height:30vh;
+	float: right;
+
+}
+
+
+.nav__left__col h2 {
+	text-align: left;
+	border: none;
+	padding-left: 20%;
+}
+
+.nav__right__col h2 {
+	text-align: right;
+	border: none;
+	padding-right: 20%;
+	
+}
+
+
+
+
+/***********************************************
+
+END OF CSS
+
+************************************************/
